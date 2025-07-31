@@ -95,7 +95,8 @@ const Portfolio = () => {
           <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-lg mb-6" />
           
           <p className={`${themeClasses.textSecondary} mb-6`}>{project.description}</p>
-          
+          <p className={`${themeClasses.textSecondary} mb-6 whitespace-pre-line`}>{project.longDescription}</p>
+
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h3 className={`text-lg font-semibold ${themeClasses.text} mb-3`}>{t.projects.technologies}</h3>
@@ -236,7 +237,7 @@ const Portfolio = () => {
               <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent"> {t.hero.title.split(' ').slice(-1)}</span>
             </h1>
           </div>
-          <p className={`text-xl ${themeClasses.textSecondary} mb-8 max-w-3xl mx-auto leading-relaxed`}>
+          <p className={`text-xl ${themeClasses.textSecondary} mb-8 mx-auto leading-relaxed`}>
             {t.hero.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -255,7 +256,7 @@ const Portfolio = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className={`text-4xl font-bold ${themeClasses.text} mb-4`}>{t.projects.title}</h2>
-            <p className={`${themeClasses.textSecondary} text-lg max-w-2xl mx-auto`}>
+            <p className={`${themeClasses.textSecondary} text-lg mx-auto`}>
               {t.projects.description}
             </p>
           </div>
@@ -312,7 +313,7 @@ const Portfolio = () => {
                 ))}
               </div>
             </div>
-            
+
             <div className={`${themeClasses.cardBg} p-6 rounded-2xl border ${themeClasses.cardBorder}`}>
               <div className="flex items-center gap-3 mb-4">
                 <FileText className="text-yellow-400" size={24} />
@@ -337,15 +338,22 @@ const Portfolio = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="mailto:tu@email.com" className="flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 hover:scale-105">
+            <a href="mailto:andreaojedazam@gmail.com" className="flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 hover:scale-105">
               <Mail size={20} />
               {t.contact.sendEmail}
             </a>
-            <a href="https://linkedin.com/in/tuusuario" className="flex items-center gap-3 px-6 py-4 border-2 border-purple-500 text-purple-400 rounded-full font-semibold hover:bg-purple-500 hover:text-white transition-all duration-300">
+            <a href="/cv-andrea.pdf" target="_blank" rel="noopener noreferrer"
+              className="flex items-center gap-3 px-6 py-4 border-2 border-pink-500 text-pink-500 rounded-full font-semibold hover:bg-pink-500 hover:text-white transition-all duration-300 hover:scale-105"
+
+            >
+              <FileText size={20} />
+              {t.contact.viewCV}
+            </a>
+            <a href="https://linkedin.com/in/andreaoz" className="flex items-center gap-3 px-6 py-4 border-2 border-purple-500 text-purple-400 rounded-full font-semibold hover:bg-purple-500 hover:text-white transition-all duration-300">
               <Linkedin size={20} />
               LinkedIn
             </a>
-            <a href="https://github.com/tuusuario" className={`flex items-center gap-3 px-6 py-4 border-2 ${themeClasses.cardBorder} ${themeClasses.textSecondary} rounded-full font-semibold hover:bg-gray-600 hover:text-white transition-all duration-300`}>
+            <a href="https://github.com/andreaoz" className={`flex items-center gap-3 px-6 py-4 border-2 ${themeClasses.cardBorder} ${themeClasses.textSecondary} rounded-full font-semibold hover:bg-gray-600 hover:text-white transition-all duration-300`}>
               <Github size={20} />
               GitHub
             </a>

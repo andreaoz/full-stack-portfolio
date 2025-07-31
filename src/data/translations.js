@@ -9,13 +9,13 @@
       },
       hero: {
         title: "Full Stack Developer",
-        description: "Especializado en crear aplicaciones web modernas y escalables usando las últimas tecnologías. Transformo ideas en experiencias digitales excepcionales.",
+        description: "Soy desarrolladora full-stack con formación en ingeniería biomédica y experiencia previa en docencia. Me especializo en crear soluciones web funcionales, combinando habilidades técnicas con comunicación clara y pensamiento crítico. Me motiva aprender constantemente y formar parte de proyectos que generen impacto.",
         viewProjects: "Ver Proyectos",
         contact: "Contactar"
       },
       projects: {
         title: "Mis Proyectos",
-        description: "Una colección de proyectos que demuestran mis habilidades en desarrollo full stack",
+        description: "Una colección de proyectos que demuestran mis habilidades en desarrollo full-stack. Algunos fueron realizados durante la Certificación Profesional de Full-Stack Development de IBM, otros corresponden a proyectos independientes, y varios fueron desarrollados en el marco de mis estudios universitarios.",
         code: "Código",
         demo: "Demo",
         more: "Más",
@@ -28,34 +28,39 @@
       },
       skills: {
         title: "Habilidades Técnicas",
-        description: "Tecnologías y herramientas que domino",
+        //description: "Tecnologías y herramientas que domino",
         frontend: "Frontend",
         backend: "Backend",
         database: "Base de Datos",
         tools: "Herramientas"
       },
       contact: {
-        title: "¿Listo para trabajar juntos?",
-        description: "Estoy disponible para nuevas oportunidades. ¡Contactemos!",
-        sendEmail: "Enviar Email"
+        title: "Gracias por visitar mi portafolio.",
+        description: "Si crees que mi perfil puede encajar en tu equipo, estaré encantada de conversar.",
+        sendEmail: "Email",
+        viewCV: "Ver CV"
       },
-      footer: "Desarrollado con React y Tailwind CSS.",
+      footer: "Desarrollado con Next y Tailwind CSS.",
       projectData: {
         tutora: {
           title: "Tutora",
-          description: "Plataforma de reservación y registro de asesorías."
+          description: "Tutora es una aplicación web full-stack desarrollada para facilitar la gestión de asesorías académicas en entornos escolares.",
+          longDescription:"El sistema permite a los docentes publicar sus horarios de asesoría y a los alumnos reservar sesiones disponibles, generando un registro organizado de las reservaciones realizadas. Este proyecto fue diseñado a partir de una necesidad real identificada en una institución educativa, con el objetivo de mejorar la planificación y comunicación entre docentes y estudiantes. \n\n El backend fue desarrollado con Django, implementando la lógica principal y la gestión de usuarios, mientras que el frontend fue construido con React, ofreciendo una interfaz moderna e intuitiva. El sistema está en etapa de desarrollo y contempla una futura integración con PostgreSQL para la persistencia de datos." ,
         },
         ecommerce: {
           title: "E-Commerce Platform",
-          description: "Plataforma completa de comercio electrónico con panel de administración, carrito de compras y pasarela de pagos."
+          description: "Plataforma completa de comercio electrónico con panel de administración, carrito de compras y pasarela de pagos." ,
+          longDescription:""
         },
         taskApp: {
           title: "Task Management App",
-          description: "Aplicación de gestión de tareas con colaboración en tiempo real, notificaciones y analytics."
+          description: "Aplicación de gestión de tareas con colaboración en tiempo real, notificaciones y analytics.",
+          longDescription:""
         },
         socialDashboard: {
           title: "Social Media Dashboard",
-          description: "Dashboard analítico para redes sociales con visualización de datos y automatización de posts."
+          description: "Dashboard analítico para redes sociales con visualización de datos y automatización de posts.",
+          longDescription:""
         }
       }
     },

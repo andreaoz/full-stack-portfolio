@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import skills from '@/data/skills';
-import translations from '@/data/translations';
+import translations from '@/data/i18n/index';
 import getProjects from '@/data/projects';
 import { Github, ExternalLink, Play, FileText, Code, Database, Globe, Mail, Linkedin, Menu, X, ChevronDown, Sun, Moon, Languages } from 'lucide-react';
 import getThemeClasses from '@/utils/getThemeClasses';
@@ -61,14 +61,30 @@ const Portfolio = () => {
         </div>
         
         <div className="flex gap-3">
-          <a href={project.github} className={`flex items-center gap-2 px-3 py-2 ${themeClasses.buttonSecondary} ${themeClasses.buttonSecondaryText} rounded-lg transition-colors text-sm`}>
-            <Github size={16} />
-            {t.projects.code}
-          </a>
-          <a href={project.demo} className="flex items-center gap-2 px-3 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors text-sm">
-            <ExternalLink size={16} />
-            {t.projects.demo}
-          </a>
+          {project.github &&
+          (
+            <a href={project.github} className={`flex items-center gap-2 px-3 py-2 ${themeClasses.buttonSecondary} ${themeClasses.buttonSecondaryText} rounded-lg transition-colors text-sm`}
+               target='_blank'
+               rel="noopener noreferrer"
+            >  
+              <Github size={16} />
+              {t.projects.code}
+            </a>
+          )
+          }
+
+          {project.demo &&
+          (
+            <a href={project.demo} className="flex items-center gap-2 px-3 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors text-sm"
+               target='_blank'
+               rel="noopener noreferrer"
+            >
+              <ExternalLink size={16} />
+              {t.projects.demo}
+            </a>
+          )
+          }
+
           <button 
             onClick={() => setActiveProject(project)}
             className={`flex items-center gap-1 px-3 py-2 border ${themeClasses.cardBorder} hover:border-purple-500 ${themeClasses.textSecondary} hover:text-purple-300 rounded-lg transition-colors text-sm`}
@@ -112,22 +128,50 @@ const Portfolio = () => {
             <div>
               <h3 className={`text-lg font-semibold ${themeClasses.text} mb-3`}>{t.projects.links}</h3>
               <div className="space-y-3">
-                <a href={project.github} className={`flex items-center gap-3 p-3 ${themeClasses.buttonSecondary} rounded-lg transition-colors`}>
-                  <Github size={20} className={themeClasses.text} />
-                  <span className={`${themeClasses.text} font-medium`}>{t.projects.repository}</span>
-                </a>
-                <a href={project.demo} className={`flex items-center gap-3 p-3 ${themeClasses.buttonSecondary} rounded-lg transition-colors`}>
+                {project.github &&
+                (
+                  <a href={project.github} className={`flex items-center gap-3 p-3 ${themeClasses.buttonSecondary} rounded-lg transition-colors`}
+                    target='_blank'
+                    rel="noopener noreferrer"
+                  >
+                    <Github size={20} className={themeClasses.text} />
+                    <span className={`${themeClasses.text} font-medium`}>{t.projects.repository}</span>
+                  </a>
+                )}
+
+                {project.demo &&
+                (
+                <a href={project.demo} className={`flex items-center gap-3 p-3 ${themeClasses.buttonSecondary} rounded-lg transition-colors`}
+                  target='_blank'
+                  rel="noopener noreferrer"
+                >
                   <ExternalLink size={20} className="text-purple-400" />
                   <span className={`${themeClasses.text} font-medium`}>{t.projects.liveDemo}</span>
                 </a>
-                <a href={project.documentation} className={`flex items-center gap-3 p-3 ${themeClasses.buttonSecondary} rounded-lg transition-colors`}>
+                )}
+
+                {project.documentation &&
+                (
+                <a href={project.documentation} className={`flex items-center gap-3 p-3 ${themeClasses.buttonSecondary} rounded-lg transition-colors`}
+                   target='_blank'
+                   rel="noopener noreferrer"
+                >
                   <FileText size={20} className="text-blue-400" />
                   <span className={`${themeClasses.text} font-medium`}>{t.projects.documentation}</span>
                 </a>
-                <a href={project.video} className={`flex items-center gap-3 p-3 ${themeClasses.buttonSecondary} rounded-lg transition-colors`}>
+                )}
+
+                {project.video &&
+                (
+                <a href={project.video} className={`flex items-center gap-3 p-3 ${themeClasses.buttonSecondary} rounded-lg transition-colors`}
+                   target='_blank'
+                   rel="noopener noreferrer"
+                >
                   <Play size={20} className="text-red-400" />
                   <span className={`${themeClasses.text} font-medium`}>{t.projects.videoDemo}</span>
                 </a>
+                )
+                }
               </div>
             </div>
           </div>

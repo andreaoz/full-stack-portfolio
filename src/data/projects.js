@@ -9,13 +9,14 @@
       category: "Full Stack",
       image: "/media/tutora-home.png",
       github: "https://github.com/andreaoz/tutora",
+      demo:"np",
       documentation: "https://docs.google.com/document/d/ejemplo3",
       video: "https://youtube.com/watch?v=ejemplo3"
     },
     {
       id: 2,
-      title: t.projectData.taskApp.title,
-      description: t.projectData.taskApp.description,
+      title: t.projectData.dealership.title,
+      description: t.projectData.dealership.description,
       technologies: ["Next.js", "TypeScript", "Prisma", "Socket.io", "Tailwind"],
       category: "Full Stack",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop",
@@ -26,8 +27,8 @@
     },
     {
       id: 3,
-      title: t.projectData.socialDashboard.title,
-      description: t.projectData.socialDashboard.description,
+      title: t.projectData.plants.title,
+      description: t.projectData.plants.description,
       technologies: ["Vue.js", "Python", "FastAPI", "MongoDB", "Chart.js"],
       category: "Full Stack",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
@@ -38,8 +39,8 @@
     },
     {
       id: 4,
-      title: t.projectData.ecommerce.title,
-      description: t.projectData.ecommerce.description,
+      title: t.projectData.books.title,
+      description: t.projectData.books.description,
       technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
       category: "Full Stack",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop",
@@ -47,7 +48,69 @@
       demo: "https://demo-ecommerce.vercel.app",
       documentation: "https://docs.google.com/document/d/ejemplo",
       video: "https://youtube.com/watch?v=ejemplo"
-    }
+    },
+      {
+      id: 5,
+      title: t.projectData.sentAnalysis.title,
+      description: t.projectData.sentAnalysis.description,
+      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
+      category: "AI",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop",
+      github: "https://github.com/tuusuario/ecommerce",
+      demo: "https://demo-ecommerce.vercel.app",
+      documentation: "https://docs.google.com/document/d/ejemplo",
+      video: "https://youtube.com/watch?v=ejemplo"
+    },
+     {
+      id: 6,
+      title: t.projectData.course9.title,
+      description: t.projectData.course9.description,
+      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
+      category: "AI",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop",
+      github: "https://github.com/tuusuario/ecommerce",
+      demo: "https://demo-ecommerce.vercel.app",
+      documentation: "https://docs.google.com/document/d/ejemplo",
+      video: "https://youtube.com/watch?v=ejemplo"
+    },
+         {
+      id: 7,
+      title: t.projectData.chatbot.title,
+      description: t.projectData.chatbot.description,
+      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
+      category: "AI",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop",
+      github: "https://github.com/tuusuario/ecommerce",
+      demo: "https://demo-ecommerce.vercel.app",
+      documentation: "https://docs.google.com/document/d/ejemplo",
+      video: "https://youtube.com/watch?v=ejemplo"
+    },
+      {
+      id: 8,
+      title: t.projectData.proyectoBEL.title,
+      description: t.projectData.proyectoBEL.description,
+      longDescription: t.projectData.proyectoBEL.longDescription,
+      technologies: ["Google Apps Script", "Google Forms", "Google Sheets", "Google Drive", "Google Docs", "Google Calendar"],
+      category: "Google AppScripts",
+      image: "/media/analizadores.png",
+      github: "",
+      demo: "",
+      documentation: "https://drive.google.com/file/d/1Xs9pri7hueVuiyJrjF3bNDw4lE8oTZIe/view?usp=sharing",
+      video: ""
+    },
+          {
+      id: 9,
+      title: t.projectData.recetas.title,
+      description: t.projectData.recetas.description,
+      longDescription: t.projectData.recetas.longDescription,
+      technologies: ["Java", "MySQL", "NetBeans", "phpMyAdmin"],
+      category: "Full Stack",
+      image: "/media/recetas.png",
+      github: "",
+      demo: "",
+      video: "",
+      documentation: "https://drive.google.com/file/d/1RQyXuVcYjegje88488ChdGHQqZDDGN_C/view?usp=sharing",
+    },
   ];
 
   export default getProjects;

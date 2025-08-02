@@ -7,38 +7,38 @@ const projectData = {
         },
         //2
         dealership: {
-          title: "Car Dealership Reviews",
-          description: "Plataforma completa de comercio electrónico con panel de administración, carrito de compras y pasarela de pagos." ,
-          longDescription:""
+          title: "Plataforma de reseñas para concesionarias",
+          description: "Plataforma para consultar y publicar reseñas de concesionarias de autos en EE.UU., con filtros por estado y gestión de usuarios." ,
+          longDescription:"Proyecto final de la certificación profesional en desarrollo full stack. \nLa aplicación permite a usuarios explorar concesionarias de autos en distintas regiones de EE.UU., leer reseñas y publicar sus propias opiniones si están registrados. \nSe utilizó Docker para ejecutar el servicio backend que gestiona la información de las concesionarias. Este servicio, desarrollado con Node.js y MongoDB, corre dentro de un contenedor, lo que facilita su configuración y asegura un entorno consistente durante el desarrollo y despliegue."
         },
         //3
         plants: {
           title: "e-plant Shopping",
-          description: "Aplicación de gestión de tareas con colaboración en tiempo real, notificaciones y analytics.",
+          description: "Website para comprar plantas.",
           longDescription:""
         },
         //4
         books: {
           title: "Express Book Reviews",
-          description: "Dashboard analítico para redes sociales con visualización de datos y automatización de posts.",
+          description: "Website para evaluar libros.",
           longDescription:""
         },
         //5
         sentAnalysis: {
           title: "Analisis de Texto",
-          description: "Dashboard analítico para redes sociales con visualización de datos y automatización de posts.",
+          description: "Sentiment Analysis.",
           longDescription:""
         },
         //6
         course9: {
           title: "Django Project",
-          description: "Dashboard analítico para redes sociales con visualización de datos y automatización de posts.",
+          description: "Proyecto usando Django para reservacion de hoteles.",
           longDescription:""
         },
         //7
         chatbot: {
           title: "Chatbot con OpenAI",
-          description: "Dashboard analítico para redes sociales con visualización de datos y automatización de posts.",
+          description: "Creacion de chatbot usando openAI.",
           longDescription:""
         },
         //8

@@ -10,8 +10,8 @@
       image: "/media/tutora-home.png",
       github: "https://github.com/andreaoz/tutora",
       demo:"",
-      documentation: "https://docs.google.com/document/d/ejemplo3",
-      video: "https://youtube.com/watch?v=ejemplo3"
+      documentation: "",
+      video: ""
     },
     {
       id: 2,
@@ -23,8 +23,8 @@
       image: "/media/best-cars.png",
       github: "https://github.com/andreaoz/best_cars_project.git",
       demo: "",
-      documentation: "https://docs.google.com/document/d/ejemplo2",
-      video: "https://youtube.com/watch?v=ejemplo2"
+      documentation: "",
+      video: "https://drive.google.com/file/d/1r2Lr75awTAcWWvmADS-sZLUyjjPhluy2/view?usp=sharing"
     },
     {
       id: 3,
@@ -33,25 +33,13 @@
       technologies: ["Vue.js", "Python", "FastAPI", "MongoDB", "Chart.js"],
       category: "E-commerce",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-      github: "https://github.com/tuusuario/social-dashboard",
+      github: "https://github.com/andreaoz/e-plantShopping.git",
       demo: "",
       documentation: "https://docs.google.com/document/d/ejemplo3",
       video: "https://youtube.com/watch?v=ejemplo3"
     },
-    {
-      id: 4,
-      title: t.projectData.books.title,
-      description: t.projectData.books.description,
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
-      category: "Media",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop",
-      github: "https://github.com/tuusuario/ecommerce",
-      demo: "https://demo-ecommerce.vercel.app",
-      documentation: "https://docs.google.com/document/d/ejemplo",
-      video: "https://youtube.com/watch?v=ejemplo"
-    },
       {
-      id: 5,
+      id: 4,
       title: t.projectData.sentAnalysis.title,
       description: t.projectData.sentAnalysis.description,
       technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
@@ -63,11 +51,11 @@
       video: "https://youtube.com/watch?v=ejemplo"
     },
      {
-      id: 6,
-      title: t.projectData.course9.title,
-      description: t.projectData.course9.description,
+      id: 5,
+      title: t.projectData.onlineCourse.title,
+      description: t.projectData.onlineCourse.description,
       technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
-      category: "Web Backend",
+      category: "EdTech",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop",
       github: "https://github.com/tuusuario/ecommerce",
       demo: "https://demo-ecommerce.vercel.app",
@@ -75,7 +63,7 @@
       video: "https://youtube.com/watch?v=ejemplo"
     },
          {
-      id: 7,
+      id: 6,
       title: t.projectData.chatbot.title,
       description: t.projectData.chatbot.description,
       technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
@@ -87,7 +75,7 @@
       video: "https://youtube.com/watch?v=ejemplo"
     },
       {
-      id: 8,
+      id: 7,
       title: t.projectData.proyectoBEL.title,
       description: t.projectData.proyectoBEL.description,
       longDescription: t.projectData.proyectoBEL.longDescription,
@@ -100,7 +88,7 @@
       video: ""
     },
           {
-      id: 9,
+      id: 8,
       title: t.projectData.recetas.title,
       description: t.projectData.recetas.description,
       longDescription: t.projectData.recetas.longDescription,

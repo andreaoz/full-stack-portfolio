@@ -18,36 +18,30 @@ const projectData = {
           longDescription:""
         },
         //4
-        books: {
-          title: "Express Book Reviews",
-          description: "Website para evaluar libros.",
-          longDescription:""
-        },
-        //5
         sentAnalysis: {
           title: "Analisis de Texto",
           description: "Sentiment Analysis.",
           longDescription:""
         },
-        //6
-        course9: {
-          title: "Django Project",
-          description: "Proyecto usando Django para reservacion de hoteles.",
+        //5
+        onlineCourse: {
+          title: "Online Course",
+          description: "Website para inscripción y evaluación de clases.",
           longDescription:""
         },
-        //7
+        //6
         chatbot: {
           title: "Chatbot con OpenAI",
           description: "Creacion de chatbot usando openAI.",
           longDescription:""
         },
-        //8
+        //7
         proyectoBEL: {
           title: "Sistema de Registro para Analizadores Médicos",
           description: "Sistema digital automatizado para gestionar envíos y recepciones de analizadores médicos en la empresa OCISA. ",
           longDescription:"Proyecto final de carrera desarrollado para la empresa OCISA, como parte de las residencias profesionales. Consiste en un sistema digital que automatiza el registro de envío y recepción de analizadores y simuladores médicos utilizados por OCISA en sus mantenimientos preventivos a nivel nacional. \n\n El sistema fue desarrollado con herramientas de Google Workspace: los usuarios llenan un formulario en Google Forms con el estado del equipo, se genera automáticamente una base de datos en Google Sheets, se crea una carpeta en Google Drive con la evidencia del trayecto, se genera un comprobante en PDF mediante Google Docs, se envía por correo, y se agenda la actividad en Google Calendar. Todo el flujo fue automatizado utilizando Google Apps Script. \nEl sistema facilita el control de los equipos en tránsito, evita pérdidas de información y reduce errores manuales, beneficiando directamente al departamento de ingeniería biomédica y de servicio."
         },
-        //9
+        //8
         recetas: {
           title: "Asistente de Recetas en Java",
           description: "Sistema de prescripción médica digital que conecta al médico con la farmacia del hospital, permitiendo generar y gestionar recetas electrónicas de forma eficiente.",

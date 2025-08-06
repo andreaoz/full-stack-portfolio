@@ -24,19 +24,22 @@
       github: "https://github.com/andreaoz/best_cars_project.git",
       demo: "",
       documentation: "",
-      video: "https://drive.google.com/file/d/1r2Lr75awTAcWWvmADS-sZLUyjjPhluy2/view?usp=sharing"
+      video: "https://drive.google.com/file/d/1r2Lr75awTAcWWvmADS-sZLUyjjPhluy2/view?usp=sharing",
+      shortVideo: "/media/BestCarsClip.MP4"
     },
     {
       id: 3,
       title: t.projectData.plants.title,
       description: t.projectData.plants.description,
-      technologies: ["Vue.js", "Python", "FastAPI", "MongoDB", "Chart.js"],
+      longDescription: t.projectData.plants.longDescription,
+      technologies: ["React", "Vite", "Redux", "JavaScript", "CSS"],
       category: "E-commerce",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      image: "/media/plant-site.png",
       github: "https://github.com/andreaoz/e-plantShopping.git",
-      demo: "",
-      documentation: "https://docs.google.com/document/d/ejemplo3",
-      video: "https://youtube.com/watch?v=ejemplo3"
+      demo: "https://e-plant-shopping-one-kappa.vercel.app/",
+      documentation: "",
+      video: "/media/PlantsClip.MP4",
+      shortVideo: "/media/PlantsClip.MP4"
     },
       {
       id: 4,
@@ -98,7 +101,7 @@
       github: "",
       demo: "",
       video: "",
-      documentation: "https://drive.google.com/file/d/1RQyXuVcYjegje88488ChdGHQqZDDGN_C/view?usp=sharing",
+      documentation: "https://drive.google.com/file/d/1RQyXuVcYjegje88488ChdGHQqZDDGN_C/view?usp=sharing"
     },
   ];
 

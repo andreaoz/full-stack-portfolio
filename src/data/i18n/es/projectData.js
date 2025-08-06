@@ -7,15 +7,15 @@ const projectData = {
         },
         //2
         dealership: {
-          title: "Plataforma de reseñas para concesionarias",
+          title: "Best Cars",
           description: "Plataforma para consultar y publicar reseñas de concesionarias de autos en EE.UU., con filtros por estado y gestión de usuarios." ,
           longDescription:"Proyecto final de la certificación profesional en desarrollo full stack. \nLa aplicación permite a usuarios explorar concesionarias de autos en distintas regiones de EE.UU., leer reseñas y publicar sus propias opiniones si están registrados. \nSe utilizó Docker para ejecutar el servicio backend que gestiona la información de las concesionarias. Este servicio, desarrollado con Node.js y MongoDB, corre dentro de un contenedor, lo que facilita su configuración y asegura un entorno consistente durante el desarrollo y despliegue."
         },
         //3
         plants: {
           title: "e-plant Shopping",
-          description: "Website para comprar plantas.",
-          longDescription:""
+          description: "Frontend de una tienda de plantas con carrito dinámico y filtro de productos.",
+          longDescription:"Los usuarios pueden explorar productos, agregarlos al carrito, modificar cantidades y ver el costo total actualizado en tiempo real."
         },
         //4
         sentAnalysis: {

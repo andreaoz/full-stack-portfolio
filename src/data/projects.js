@@ -38,8 +38,8 @@
       github: "https://github.com/andreaoz/e-plantShopping.git",
       demo: "https://e-plant-shopping-one-kappa.vercel.app/",
       documentation: "",
-      video: "/media/PlantsClip.MP4",
-      shortVideo: "/media/PlantsClip.MP4"
+      video: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754594220/PlantsClip_vwtnlk.mp4",
+      shortVideo: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754594220/PlantsClip_vwtnlk.mp4"
     },
       {
       id: 4,

@@ -31,7 +31,8 @@ const Portfolio = () => {
   ];
 
   const ProjectCard = ({ project }) => (
-    <div className={`group relative ${themeClasses.cardBg} rounded-2xl overflow-hidden border ${themeClasses.cardBorder} ${themeClasses.hoverBorder} transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20`}>
+    <div className={`group relative ${themeClasses.cardBg} rounded-2xl overflow-hidden border ${themeClasses.cardBorder} ${themeClasses.hoverBorder} transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20`}
+    >
       <div className="relative h-48 overflow-hidden">
         <img 
           src={project.image} 
@@ -110,17 +111,24 @@ const Portfolio = () => {
         
         <div className="p-6">
           {/*<img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-lg mb-6" />*/}
-          {project.video && (
+          
           <video
             src={project.shortVideo}
-            preload="auto"
+            preload='auto'
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-90 object-cover rounded-xl mb-4"
-          />
-          )}
+          className="
+            w-full 
+            h-35         
+            sm:h-65       
+            md:h-90       
+            object-cover  
+            sm:object-cover 
+            rounded-xl 
+            mb-4
+          "          />
           
           <p className={`${themeClasses.textSecondary} mb-6`}>{project.description}</p>
           <p className={`${themeClasses.textSecondary} mb-6 whitespace-pre-line`}>{project.longDescription}</p>

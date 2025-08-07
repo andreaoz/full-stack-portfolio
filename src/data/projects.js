@@ -39,8 +39,8 @@
       demo: "https://e-plant-shopping-one-kappa.vercel.app/",
       documentation: "",
       video: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754594220/PlantsClip_vwtnlk.mp4",
-      shortVideo: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754594220/PlantsClip_vwtnlk.mp4"
-    },
+      shortVideo: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754594220/PlantsClip_vwtnlk.mp4",
+        },
       {
       id: 4,
       title: t.projectData.sentAnalysis.title,
@@ -106,3 +106,5 @@
   ];
 
   export default getProjects;
+
+

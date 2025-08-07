@@ -5,6 +5,8 @@ import translations from '@/data/i18n/index';
 import getProjects from '@/data/projects';
 import { Github, ExternalLink, Play, FileText, Code, Database, Globe, Mail, Linkedin, Menu, X, ChevronDown, Sun, Moon, Languages } from 'lucide-react';
 import getThemeClasses from '@/utils/getThemeClasses';
+import ProjectCard from '@/components/ProjectCard';
+import ProjectModal from '@/components/ProjectModal';
 
 const Portfolio = () => {
   const [activeProject, setActiveProject] = useState(null);
@@ -30,176 +32,6 @@ const Portfolio = () => {
     { code: 'fr', name: 'Français', flag: '🇫🇷' }
   ];
 
-  const ProjectCard = ({ project }) => (
-    <div className={`group relative ${themeClasses.cardBg} rounded-2xl overflow-hidden border ${themeClasses.cardBorder} ${themeClasses.hoverBorder} transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20`}
-    >
-      <div className="relative h-48 overflow-hidden">
-        <img 
-          src={project.image} 
-          alt={project.title}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-        />
-
-        <div className={`absolute inset-0 bg-gradient-to-t ${darkMode ? 'from-slate-900' : 'from-gray-900'} via-transparent to-transparent opacity-60`}></div>
-        <div className="absolute top-4 right-4">
-          <span className="px-3 py-1 bg-purple-600 text-white text-sm rounded-full font-medium">
-            {project.category}
-          </span>
-        </div>
-      </div>
-      
-      <div className="p-6">
-        <h3 className={`text-xl font-bold ${themeClasses.text} mb-2 group-hover:text-purple-300 transition-colors`}>
-          {project.title}
-        </h3>
-        <p className={`${themeClasses.textSecondary} mb-4`}>{project.description}</p>
-        
-        <div className="flex flex-wrap gap-2 mb-4">
-          {project.technologies.map((tech, index) => (
-            <span key={index} className={`px-2 py-1 ${themeClasses.techBg} ${themeClasses.techText} text-xs rounded-lg`}>
-              {tech}
-            </span>
-          ))}
-        </div>
-        
-        <div className="flex gap-3">
-          {project.github &&
-          (
-            <a href={project.github} className={`flex items-center gap-2 px-3 py-2 ${themeClasses.buttonSecondary} ${themeClasses.buttonSecondaryText} rounded-lg transition-colors text-sm`}
-               target='_blank'
-               rel="noopener noreferrer"
-            >  
-              <Github size={16} />
-              {t.projects.code}
-            </a>
-          )
-          }
-
-          {project.demo &&
-          (
-            <a href={project.demo} className="flex items-center gap-2 px-3 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors text-sm"
-               target='_blank'
-               rel="noopener noreferrer"
-            >
-              <ExternalLink size={16} />
-              {t.projects.demo}
-            </a>
-          )
-          }
-
-          <button 
-            onClick={() => setActiveProject(project)}
-            className={`flex items-center gap-1 px-3 py-2 border ${themeClasses.cardBorder} hover:border-purple-500 ${themeClasses.textSecondary} hover:text-purple-300 rounded-lg transition-colors text-sm`}
-          >
-            <ChevronDown size={16} />
-            {t.projects.more}
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-
-  const ProjectModal = ({ project, onClose }) => (
-    <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 z-50">
-      <div className={`${themeClasses.modalBg} rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto border ${themeClasses.modalBorder}`}>
-        <div className={`p-6 border-b ${themeClasses.modalBorder} flex justify-between items-center`}>
-          <h2 className={`text-2xl font-bold ${themeClasses.text}`}>{project.title}</h2>
-          <button onClick={onClose} className={`${themeClasses.textSecondary} hover:${themeClasses.text}`}>
-            <X size={24} />
-          </button>
-        </div>
-        
-        <div className="p-6">
-          {/*<img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-lg mb-6" />*/}
-          
-          <video
-            src={project.shortVideo}
-            preload='auto'
-            autoPlay
-            loop
-            muted
-            playsInline
-          className="
-            w-full 
-            h-35         
-            sm:h-65       
-            md:h-90       
-            object-cover  
-            sm:object-cover 
-            rounded-xl 
-            mb-4
-          "          />
-          
-          <p className={`${themeClasses.textSecondary} mb-6`}>{project.description}</p>
-          <p className={`${themeClasses.textSecondary} mb-6 whitespace-pre-line`}>{project.longDescription}</p>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h3 className={`text-lg font-semibold ${themeClasses.text} mb-3`}>{t.projects.technologies}</h3>
-              <div className="flex flex-wrap gap-2 mb-6">
-                {project.technologies.map((tech, index) => (
-                  <span key={index} className="px-3 py-1 bg-purple-600 text-white rounded-lg text-sm">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-            
-            <div>
-              <h3 className={`text-lg font-semibold ${themeClasses.text} mb-3`}>{t.projects.links}</h3>
-              <div className="space-y-3">
-                {project.github &&
-                (
-                  <a href={project.github} className={`flex items-center gap-3 p-3 ${themeClasses.buttonSecondary} rounded-lg transition-colors`}
-                    target='_blank'
-                    rel="noopener noreferrer"
-                  >
-                    <Github size={20} className={themeClasses.text} />
-                    <span className={`${themeClasses.text} font-medium`}>{t.projects.repository}</span>
-                  </a>
-                )}
-
-                {project.demo &&
-                (
-                <a href={project.demo} className={`flex items-center gap-3 p-3 ${themeClasses.buttonSecondary} rounded-lg transition-colors`}
-                  target='_blank'
-                  rel="noopener noreferrer"
-                >
-                  <ExternalLink size={20} className="text-purple-400" />
-                  <span className={`${themeClasses.text} font-medium`}>{t.projects.liveDemo}</span>
-                </a>
-                )}
-
-                {project.documentation &&
-                (
-                <a href={project.documentation} className={`flex items-center gap-3 p-3 ${themeClasses.buttonSecondary} rounded-lg transition-colors`}
-                   target='_blank'
-                   rel="noopener noreferrer"
-                >
-                  <FileText size={20} className="text-blue-400" />
-                  <span className={`${themeClasses.text} font-medium`}>{t.projects.documentation}</span>
-                </a>
-                )}
-
-                {project.video &&
-                (
-                <a href={project.video} className={`flex items-center gap-3 p-3 ${themeClasses.buttonSecondary} rounded-lg transition-colors`}
-                   target='_blank'
-                   rel="noopener noreferrer"
-                >
-                  <Play size={20} className="text-red-400" />
-                  <span className={`${themeClasses.text} font-medium`}>{t.projects.videoDemo}</span>
-                </a>
-                )
-                }
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-
   return (
     <div className={`min-h-screen ${themeClasses.bg}`}>
       {/* Navbar */}
@@ -224,6 +56,7 @@ const Portfolio = () => {
                   <Languages size={16} />
                   {languages.find(lang => lang.code === language)?.flag}
                 </button>
+                
                 {languageMenuOpen && (
                   <div className={`absolute right-0 mt-2 w-40 ${themeClasses.modalBg} rounded-lg shadow-lg border ${themeClasses.modalBorder} py-2`}>
                     {languages.map((lang) => (
@@ -268,15 +101,34 @@ const Portfolio = () => {
                 <a href="#contact" className={`${themeClasses.textSecondary} hover:text-purple-400 transition-colors`}>{t.nav.contact}</a>
                 
                 <div className="flex items-center gap-4 mt-2">
-                  <div className="relative">
-                    <button
-                      onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
-                      className={`flex items-center gap-2 px-3 py-2 ${themeClasses.buttonSecondary} ${themeClasses.buttonSecondaryText} rounded-lg transition-colors`}
-                    >
-                      <Languages size={16} />
-                      {languages.find(lang => lang.code === language)?.flag}
-                    </button>
-                  </div>
+                  
+                <div className="relative">
+                  <button
+                    onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
+                    className={`flex items-center gap-2 px-3 py-2 ${themeClasses.buttonSecondary} ${themeClasses.buttonSecondaryText} rounded-lg transition-colors`}
+                  >
+                    <Languages size={16} />
+                    {languages.find(lang => lang.code === language)?.flag}
+                  </button>
+                  
+                  {languageMenuOpen && (
+                    <div className={`absolute left-0 mt-2 w-40 ${themeClasses.modalBg} rounded-lg shadow-lg border ${themeClasses.modalBorder} py-2`}>
+                      {languages.map((lang) => (
+                        <button
+                          key={lang.code}
+                          onClick={() => {
+                            setLanguage(lang.code);
+                            setLanguageMenuOpen(false);
+                          }}
+                          className={`w-full flex items-center gap-3 px-4 py-2 hover:bg-purple-100 ${darkMode ? 'hover:bg-slate-800' : 'hover:bg-gray-100'} transition-colors ${themeClasses.text}`}
+                        >
+                          <span>{lang.flag}</span>
+                          <span>{lang.name}</span>
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
                   
                   <button
                     onClick={() => setDarkMode(!darkMode)}
@@ -288,6 +140,7 @@ const Portfolio = () => {
               </div>
             </div>
           )}
+
         </div>
       </nav>
 
@@ -327,7 +180,13 @@ const Portfolio = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map(project => (
-              <ProjectCard key={project.id} project={project} />
+              <ProjectCard 
+                key={project.id} 
+                project={project} 
+                themeClasses={themeClasses}
+                darkMode={darkMode}
+                setActiveProject={setActiveProject}
+                t={t}/>
             ))}
           </div>
         </div>
@@ -437,10 +296,14 @@ const Portfolio = () => {
         <ProjectModal 
           project={activeProject} 
           onClose={() => setActiveProject(null)} 
+                    themeClasses={themeClasses}
+          t={t}
         />
       )}
     </div>
   );
+
+
 };
 
 export default Portfolio;

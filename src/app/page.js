@@ -113,6 +113,7 @@ const Portfolio = () => {
           {project.video && (
           <video
             src={project.shortVideo}
+            preload="auto"
             autoPlay
             loop
             muted

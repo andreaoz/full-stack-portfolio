@@ -9,7 +9,7 @@ const es = {
       },
       hero: {
         title: "Full Stack Developer",
-        description: "Soy desarrolladora full-stack con formación en ingeniería biomédica y experiencia previa en docencia. Me especializo en crear soluciones web funcionales, combinando habilidades técnicas con comunicación clara y pensamiento crítico. Me motiva aprender constantemente y formar parte de proyectos que generen impacto.",
+        description: "Soy desarrolladora full-stack con formación en ingeniería biomédica y experiencia previa en docencia. \nMe especializo en crear soluciones web funcionales, combinando habilidades técnicas con comunicación clara y pensamiento crítico. Me motiva aprender constantemente y formar parte de proyectos que generen impacto.",
         viewProjects: "Ver Proyectos",
         contact: "Contactar"
       },

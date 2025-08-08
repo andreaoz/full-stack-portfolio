@@ -7,6 +7,7 @@ import { Github, ExternalLink, Play, FileText, Code, Database, Globe, Mail, Link
 import getThemeClasses from '@/utils/getThemeClasses';
 import ProjectCard from '@/components/ProjectCard';
 import ProjectModal from '@/components/ProjectModal';
+import ScrollToTopButton from '@/components/ToTopButton';
 
 const Portfolio = () => {
   const [activeProject, setActiveProject] = useState(null);
@@ -284,12 +285,15 @@ const Portfolio = () => {
         </div>
       </section>
 
+      <ScrollToTopButton />
+
       {/* Footer */}
       <footer className={`${themeClasses.footerBg} py-8 px-6 border-t ${themeClasses.footerBorder}`}>
         <div className={`max-w-6xl mx-auto text-center ${themeClasses.textSecondary}`}>
           <p>&copy; 2025 {t.name}. {t.footer}</p>
         </div>
       </footer>
+      
 
       {/* Project Modal */}
       {activeProject && (

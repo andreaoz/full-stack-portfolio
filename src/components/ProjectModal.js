@@ -13,15 +13,23 @@ const ProjectModal = ({ project, themeClasses, t, onClose }) => {
         </div>
 
         <div className="p-6">
-          <video
-            src={project.shortVideo}
-            preload="auto"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-35 sm:h-65 md:h-90 object-cover sm:object-cover rounded-xl mb-4"
-          />
+          {project.shortVideo ? (
+            <video
+              src={project.shortVideo}
+              preload="auto"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-35 sm:h-65 md:h-90 object-cover sm:object-cover rounded-xl mb-4"
+            />
+          ) : (
+            <img
+              src={project.image}
+              alt="Project preview"
+              className="w-full h-35 sm:h-65 md:h-90 object-cover sm:object-cover rounded-xl mb-4"
+            />
+          )}
 
           <p className={`${themeClasses.textSecondary} mb-6`}>{project.description}</p>
           <p className={`${themeClasses.textSecondary} mb-6 whitespace-pre-line`}>{project.longDescription}</p>

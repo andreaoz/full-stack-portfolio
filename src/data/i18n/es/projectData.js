@@ -19,9 +19,9 @@ const projectData = {
         },
         //4
         sentAnalysis: {
-          title: "Analisis de Texto",
-          description: "Sentiment Analysis.",
-          longDescription:""
+          title: "Sentiment Aura Picture",
+          description: "App que analiza el sentimiento de un texto con NLTK y crea una animación visual que refleja las emociones detectadas a través de colores dinámicos.",
+          longDescription:"El usuario ingresa un texto en la interfaz, y el backend (con Flask) lo procesa con NLTK VADER para detectar la polaridad y tipo de sentimientos. \nCon base en este análisis, el frontend (Vite + React) genera una imagen animada (SAP) que cambia sus colores y movimiento para representar de manera abstracta el estado emocional del texto. \n La animación y el diseño visual fueron creados utilizando Tailwind CSS. El proyecto fue desplegado en Render, integrando backend y frontend en un solo dominio para ofrecer una experiencia continua y rápida."
         },
         //5
         onlineCourse: {

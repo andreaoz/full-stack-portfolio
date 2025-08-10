@@ -158,7 +158,6 @@
   }
 }
 
-/* Clases de utilidad para las animaciones */
 .animate-float-1 {
   animation: float-1 8s ease-in-out infinite;
 }
@@ -207,12 +206,6 @@
   animation-delay: -8s;
 }
 
-/* Clase para el gradiente radial */
-.bg-gradient-radial {
-  background: radial-gradient(circle, var(--tw-gradient-stops));
-}
-
-/* Animación adicional para un efecto más sutil si prefieres */
 @keyframes gentle-float {
   0%, 100% { 
     transform: translateY(0px) scale(1); 

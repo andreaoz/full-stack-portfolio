@@ -45,13 +45,15 @@
       id: 4,
       title: t.projectData.sentAnalysis.title,
       description: t.projectData.sentAnalysis.description,
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
+      longDescription: t.projectData.sentAnalysis.longDescription,
+      technologies: ["Python", "Flask", "NLTK (VATER Sentiment Analysis)", "Vite", "React", "JavaScript", "Tailwind CSS", "Render"],
       category: "NLP",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop",
-      github: "https://github.com/tuusuario/ecommerce",
-      demo: "https://demo-ecommerce.vercel.app",
-      documentation: "https://docs.google.com/document/d/ejemplo",
-      video: "https://youtube.com/watch?v=ejemplo"
+      image: "/media/sap.png",
+      github: "https://github.com/andreaoz/sentiment-aura-pic.git",
+      demo: "https://sentiment-aura-pic.onrender.com/",
+      documentation: "",
+      video: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754794088/sap-video_drwztl.mp4",
+      shortVideo: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754794088/sap-video_drwztl.mp4"
     },
      {
       id: 5,

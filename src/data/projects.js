@@ -30,21 +30,6 @@
       shortVideo: "/media/BestCarsClip.MP4",
       status:"Actualmente trabajando en la implementación de JWT para autenticación."
     },
-    {
-      id: 3,
-      title: t.projectData.plants.title,
-      description: t.projectData.plants.description,
-      longDescription: t.projectData.plants.longDescription,
-      technologies: ["React", "Vite", "Redux", "JavaScript", "CSS"],
-      category: "E-commerce",
-      image: "/media/plant-site.png",
-      github: "https://github.com/andreaoz/e-plantShopping.git",
-      demo: "https://e-plant-shopping-one-kappa.vercel.app/",
-      documentation: "",
-      video: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754594220/PlantsClip_vwtnlk.mp4",
-      shortVideo: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754594220/PlantsClip_vwtnlk.mp4",
-      status:"Frontend desplegado."
-        },
       {
       id: 4,
       title: t.projectData.sentAnalysis.title,
@@ -60,6 +45,21 @@
       shortVideo: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754794088/sap-video_drwztl.mp4",
       status:"En producción."
     },
+        {
+      id: 3,
+      title: t.projectData.plants.title,
+      description: t.projectData.plants.description,
+      longDescription: t.projectData.plants.longDescription,
+      technologies: ["React", "Vite", "JavaScript", "CSS"],
+      category: "E-commerce",
+      image: "/media/plant-site.png",
+      github: "https://github.com/andreaoz/e-plantShopping.git",
+      demo: "https://e-plant-shopping-one-kappa.vercel.app/",
+      documentation: "",
+      video: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754594220/PlantsClip_vwtnlk.mp4",
+      shortVideo: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754594220/PlantsClip_vwtnlk.mp4",
+      status:"Frontend desplegado."
+        },
      {
       id: 5,
       title: "",

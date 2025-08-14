@@ -59,8 +59,8 @@ const Portfolio = () => {
         themeClasses={themeClasses} 
         t={t} 
       />
-    */}
-    
+      */}
+
       {/* Projects Section */}
       <ProjectSection
         projects={projects}

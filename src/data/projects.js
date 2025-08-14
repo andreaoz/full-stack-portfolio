@@ -13,7 +13,7 @@
       documentation: "",
       video: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1755122633/Tutora-video-demo_f5hzjl.mp4",
       shortVideo:"https://res.cloudinary.com/dbtvmyrts/video/upload/v1755122626/TutoraShortVideo_p5plmr.mp4",
-      status:"Actualmente trabajando en la implementación de JWT para autenticación."
+      status: t.projectData.tutora.status,
     },
     {
       id: 2,
@@ -28,8 +28,8 @@
       documentation: "",
       video: "https://drive.google.com/file/d/1r2Lr75awTAcWWvmADS-sZLUyjjPhluy2/view?usp=sharing",
       shortVideo: "/media/BestCarsClip.MP4",
-      status:"Actualmente trabajando en la implementación de JWT para autenticación."
-    },
+      status: t.projectData.dealership.status,
+        },
       {
       id: 4,
       title: t.projectData.sentAnalysis.title,
@@ -43,7 +43,7 @@
       documentation: "",
       video: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754794088/sap-video_drwztl.mp4",
       shortVideo: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754794088/sap-video_drwztl.mp4",
-      status:"En producción."
+      status: t.projectData.sentAnalysis.status,
     },
         {
       id: 3,
@@ -58,7 +58,7 @@
       documentation: "",
       video: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754594220/PlantsClip_vwtnlk.mp4",
       shortVideo: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754594220/PlantsClip_vwtnlk.mp4",
-      status:"Frontend desplegado."
+      status: t.projectData.plants.status,
         },
      {
       id: 5,
@@ -70,7 +70,8 @@
       github: "https://github.com/tuusuario/ecommerce",
       demo: "https://demo-ecommerce.vercel.app",
       documentation: "https://docs.google.com/document/d/ejemplo",
-      video: "https://youtube.com/watch?v=ejemplo"
+      video: "https://youtube.com/watch?v=ejemplo",
+      status: t.projectData.onlineCourse.status,
     },
          {
       id: 6,
@@ -82,7 +83,8 @@
       github: "https://github.com/tuusuario/ecommerce",
       demo: "https://demo-ecommerce.vercel.app",
       documentation: "https://docs.google.com/document/d/ejemplo",
-      video: "https://youtube.com/watch?v=ejemplo"
+      video: "https://youtube.com/watch?v=ejemplo",
+      status: t.projectData.chatbot.status,
     },
       {
       id: 7,
@@ -96,7 +98,7 @@
       demo: "",
       documentation: "https://drive.google.com/file/d/1Xs9pri7hueVuiyJrjF3bNDw4lE8oTZIe/view?usp=sharing",
       video: "",
-      status:" "
+      status: t.projectData.proyectoBEL.status,     
     },
           {
       id: 8,
@@ -110,7 +112,7 @@
       demo: "",
       video: "",
       documentation: "https://drive.google.com/file/d/1RQyXuVcYjegje88488ChdGHQqZDDGN_C/view?usp=sharing",
-      status: ""
+      status: t.projectData.recetas.status,
     },
   ];
 

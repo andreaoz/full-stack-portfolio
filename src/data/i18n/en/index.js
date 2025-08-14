@@ -8,40 +8,42 @@ const en = {
         contact: "Contact"
       },
       hero: {
-        title: "Full Stack Developer",
-        description: "Soy desarrolladora full-stack con formación en ingeniería biomédica y experiencia previa en docencia. Me especializo en crear soluciones web funcionales, combinando habilidades técnicas con comunicación clara y pensamiento crítico. Me motiva aprender constantemente y formar parte de proyectos que generen impacto.",
-        viewProjects: "Ver Proyectos",
-        contact: "Contactar"
+        title: "Web Developer",
+        description: "I am a web developer with a degree in biomedical engineering and previous experience in teaching. My go-to tools are React for the frontend and Django for the backend, and I really enjoy project design. I am motivated by continuous learning and the opportunity to contribute to projects with real impact.",
+        viewProjects: "View Projects",
+        contact: "Contact"
       },
       projects: {
-        title: "Mis Proyectos",
-        description: "Una colección de proyectos que demuestran mis habilidades en desarrollo full-stack. Algunos fueron realizados durante la Certificación Profesional de Full-Stack Development de IBM, otros corresponden a proyectos independientes, y varios fueron desarrollados en el marco de mis estudios universitarios.",
-        code: "Código",
+        title: "My Projects",
+        description: "A collection of projects that showcase my skills in web development. Some were completed during the IBM Full-Stack Development Professional Certificate, others are independent projects, and some were developed as part of my university studies.",
+        code: "Code",
         demo: "Demo",
-        more: "Más",
-        technologies: "Tecnologías Utilizadas",
-        links: "Enlaces del Proyecto",
-        repository: "Repositorio GitHub",
-        liveDemo: "Demo en Vivo",
-        documentation: "Documentación",
-        videoDemo: "Video Demo"
+        more: "More",
+        technologies: "Technologies Used",
+        links: "Project Links",
+        repository: "GitHub Repository",
+        liveDemo: "Live Demo",
+        documentation: "Documentation",
+        videoDemo: "Video Demo",
+        status:"Status"
       },
       skills: {
-        title: "Habilidades Técnicas",
-        //description: "Tecnologías y herramientas que domino",
+        title: "Technical Skills",
+        //description: "Technologies and tools I master",
         frontend: "Frontend",
         backend: "Backend",
-        database: "Base de Datos",
-        tools: "Herramientas"
+        database: "Database",
+        tools: "Tools"
       },
       contact: {
-        title: "Gracias por visitar mi portafolio.",
-        description: "Si crees que mi perfil puede encajar en tu equipo, estaré encantada de conversar.",
+        title: "Thank you for visiting my portfolio.",
+        description: "If you think my profile could be a good fit for your team, I would be happy to talk.",
         sendEmail: "Email",
-        viewCV: "Ver CV"
+        viewCV: "View CV"
       },
-      footer: "Desarrollado con Next y Tailwind CSS.",
+      footer: "Developed with Next and Tailwind CSS.",
   projectData
 };
 
 export default en;
+

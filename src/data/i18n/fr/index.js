@@ -2,45 +2,52 @@ import projectData from './projectData.js';
 
 const fr = {
   name: "Andrea Ojeda",
-      nav: {
-        projects: "Proyectos",
-        skills: "Habilidades",
-        contact: "Contacto"
-      },
-      hero: {
-        title: "Full Stack Developer",
-        description: "Soy desarrolladora full-stack con formación en ingeniería biomédica y experiencia previa en docencia. Me especializo en crear soluciones web funcionales, combinando habilidades técnicas con comunicación clara y pensamiento crítico. Me motiva aprender constantemente y formar parte de proyectos que generen impacto.",
-        viewProjects: "Ver Proyectos",
-        contact: "Contactar"
-      },
-      projects: {
-        title: "Mis Proyectos",
-        description: "Una colección de proyectos que demuestran mis habilidades en desarrollo full-stack. Algunos fueron realizados durante la Certificación Profesional de Full-Stack Development de IBM, otros corresponden a proyectos independientes, y varios fueron desarrollados en el marco de mis estudios universitarios.",
-        code: "Código",
-        demo: "Demo",
-        more: "Más",
-        technologies: "Tecnologías Utilizadas",
-        links: "Enlaces del Proyecto",
-        repository: "Repositorio GitHub",
-        liveDemo: "Demo en Vivo",
-        documentation: "Documentación",
-        videoDemo: "Video Demo"
-      },
-      skills: {
-        title: "Habilidades Técnicas",
-        //description: "Tecnologías y herramientas que domino",
-        frontend: "Frontend",
-        backend: "Backend",
-        database: "Base de Datos",
-        tools: "Herramientas"
-      },
-      contact: {
-        title: "Gracias por visitar mi portafolio.",
-        description: "Si crees que mi perfil puede encajar en tu equipo, estaré encantada de conversar.",
-        sendEmail: "Email",
-        viewCV: "Ver CV"
-      },
-      footer: "Desarrollado con Next y Tailwind CSS.",
+  nav: {
+    aboutme: "À propos de moi",
+    projects: "Projets",
+    skills: "Compétences",
+    contact: "Contact"
+  },
+  hero: {
+    title: "Web Developer",
+    description: "Je suis web developer avec une formation en ingénierie biomédicale et une expérience préalable dans l’enseignement. Mes outils de prédilection sont React pour le frontend et Django pour le backend, et j’apprécie particulièrement la conception et l’architecture de projets. J’aime apprendre en continu et contribuer à des projets ayant un réel impact.",
+    viewProjects: "Voir mes Projets",
+    contact: "Me Contacter"
+  },
+  aboutme: {
+    title: "À propos de moi",
+    exp: "Blablabla.",
+    edu: "bñdjnbñsodbn",
+    extra: "sihvi"
+  },
+  projects: {
+    title: "Mes Projets",
+    description: "Une collection de projets démontrant mes compétences en développement web. Certains ont été réalisés dans le cadre de la Certification Professionnelle Full-Stack Development d’IBM, d’autres correspondent à des projets indépendants, et d’autres ont été développés dans le cadre de mes études universitaires.",
+    code: "Code",
+    demo: "Demo",
+    more: "Plus",
+    technologies: "Technologies Utilisées",
+    status: "Status",
+    links: "Liens du Projet",
+    repository: "Repository GitHub",
+    liveDemo: "Live Demo",
+    documentation: "Documentation",
+    videoDemo: "Demo Vidéo"
+  },
+  skills: {
+    title: "Compétences Techniques",
+    frontend: "Frontend",
+    backend: "Backend",
+    database: "Base de Données",
+    tools: "Outils"
+  },
+  contact: {
+    title: "Merci de visiter mon portfolio.",
+    description: "Si vous pensez que mon profil peut correspondre à votre équipe, je serai ravie d’en discuter.",
+    sendEmail: "Email",
+    viewCV: "Voir CV"
+  },
+  footer: "Développé avec Next et Tailwind CSS.",
   projectData
 };
 

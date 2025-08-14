@@ -9,8 +9,8 @@ const es = {
         contact: "Contacto"
       },
       hero: {
-        title: "Full Stack Developer",
-        description: "Soy desarrolladora full-stack con formación en ingeniería biomédica y experiencia previa en docencia. \nMe especializo en crear soluciones web funcionales, combinando habilidades técnicas con comunicación clara y pensamiento crítico. Me motiva aprender constantemente y formar parte de proyectos que generen impacto.",
+        title: "Web Developer",
+        description: "Soy desarrolladora web con formación en ingeniería biomédica y experiencia previa en docencia. Mis herramientas de confianza son React para el frontend y Django para el backend, y disfruto el diseño y arquitectura de proyectos. Me inspira el aprendizaje continuo y la oportunidad de contribuir en proyectos con impacto real.",
         viewProjects: "Ver Proyectos",
         contact: "Contactar"
       },
@@ -22,7 +22,7 @@ const es = {
       },
       projects: {
         title: "Mis Proyectos",
-        description: "Una colección de proyectos que demuestran mis habilidades en desarrollo full-stack. Algunos fueron realizados durante la Certificación Profesional de Full-Stack Development de IBM, otros corresponden a proyectos independientes, y varios fueron desarrollados en el marco de mis estudios universitarios.",
+        description: "Una colección de proyectos que demuestran mis habilidades en desarrollo web. Algunos fueron realizados durante la Certificación Profesional de Full-Stack Development de IBM, otros corresponden a proyectos independientes, y varios fueron desarrollados en el marco de mis estudios universitarios.",
         code: "Código",
         demo: "Demo",
         more: "Más",

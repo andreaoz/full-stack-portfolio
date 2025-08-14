@@ -11,7 +11,9 @@
       github: "https://github.com/andreaoz/tutora",
       demo:"",
       documentation: "",
-      video: ""
+      video: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1755122633/Tutora-video-demo_f5hzjl.mp4",
+      shortVideo:"https://res.cloudinary.com/dbtvmyrts/video/upload/v1755122626/TutoraShortVideo_p5plmr.mp4",
+      status:"Actualmente trabajando en la implementación de JWT para autenticación."
     },
     {
       id: 2,
@@ -25,7 +27,8 @@
       demo: "",
       documentation: "",
       video: "https://drive.google.com/file/d/1r2Lr75awTAcWWvmADS-sZLUyjjPhluy2/view?usp=sharing",
-      shortVideo: "/media/BestCarsClip.MP4"
+      shortVideo: "/media/BestCarsClip.MP4",
+      status:"Actualmente trabajando en la implementación de JWT para autenticación."
     },
     {
       id: 3,
@@ -40,6 +43,7 @@
       documentation: "",
       video: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754594220/PlantsClip_vwtnlk.mp4",
       shortVideo: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754594220/PlantsClip_vwtnlk.mp4",
+      status:"Frontend desplegado."
         },
       {
       id: 4,
@@ -53,11 +57,12 @@
       demo: "https://sentiment-aura-pic.onrender.com/",
       documentation: "",
       video: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754794088/sap-video_drwztl.mp4",
-      shortVideo: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754794088/sap-video_drwztl.mp4"
+      shortVideo: "https://res.cloudinary.com/dbtvmyrts/video/upload/v1754794088/sap-video_drwztl.mp4",
+      status:"En producción."
     },
      {
       id: 5,
-      title: t.projectData.onlineCourse.title,
+      title: "",
       description: t.projectData.onlineCourse.description,
       technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
       category: "EdTech",
@@ -69,7 +74,7 @@
     },
          {
       id: 6,
-      title: t.projectData.chatbot.title,
+      title: "",
       description: t.projectData.chatbot.description,
       technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
       category: "AI Integration",
@@ -90,7 +95,8 @@
       github: "",
       demo: "",
       documentation: "https://drive.google.com/file/d/1Xs9pri7hueVuiyJrjF3bNDw4lE8oTZIe/view?usp=sharing",
-      video: ""
+      video: "",
+      status:" "
     },
           {
       id: 8,
@@ -103,7 +109,8 @@
       github: "",
       demo: "",
       video: "",
-      documentation: "https://drive.google.com/file/d/1RQyXuVcYjegje88488ChdGHQqZDDGN_C/view?usp=sharing"
+      documentation: "https://drive.google.com/file/d/1RQyXuVcYjegje88488ChdGHQqZDDGN_C/view?usp=sharing",
+      status: ""
     },
   ];
 

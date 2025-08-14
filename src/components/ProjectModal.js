@@ -1,7 +1,17 @@
 "use client";
 import { Github, ExternalLink, FileText, Play, X } from "lucide-react";
+import { useState, useEffect } from "react";
+import "../utils/loading.css";
 
 const ProjectModal = ({ project, themeClasses, t, onClose }) => {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 z-50">
       <div className={`${themeClasses.modalBg} rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto border ${themeClasses.modalBorder}`}>
@@ -13,23 +23,27 @@ const ProjectModal = ({ project, themeClasses, t, onClose }) => {
         </div>
 
         <div className="p-6">
-          {project.shortVideo ? (
-            <video
-              src={project.shortVideo}
-              preload="auto"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-35 sm:h-65 md:h-90 object-cover sm:object-cover rounded-xl mb-4"
-            />
-          ) : (
-            <img
-              src={project.image}
-              alt="Project preview"
-              className="w-full h-35 sm:h-65 md:h-90 object-cover sm:object-cover rounded-xl mb-4"
-            />
-          )}
+        {loading ? (
+          <div className="loader-container">
+            <div className="loader"></div>
+          </div>
+        ) : project.shortVideo ? (
+          <video
+            src={project.shortVideo}
+            preload="auto"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-35 sm:h-65 md:h-90 object-cover sm:object-cover rounded-xl mb-4"
+          />
+        ) : (
+          <img
+            src={project.image}
+            alt="Project preview"
+            className="w-full h-35 sm:h-65 md:h-90 object-cover sm:object-cover rounded-xl mb-4"
+          />
+        )}
 
           <p className={`${themeClasses.textSecondary} mb-6`}>{project.description}</p>
           <p className={`${themeClasses.textSecondary} mb-6 whitespace-pre-line`}>{project.longDescription}</p>
@@ -44,6 +58,16 @@ const ProjectModal = ({ project, themeClasses, t, onClose }) => {
                   </span>
                 ))}
               </div>
+
+              <h3 className={`text-base font-semibold ${themeClasses.text}`}>{t.projects.status}</h3>
+              <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="py-1 text-white rounded-lg text-sm">
+                    {project.status}
+                  </span>
+                
+              </div>
+
+              
             </div>
 
             <div>

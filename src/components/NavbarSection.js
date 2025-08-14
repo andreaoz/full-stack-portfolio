@@ -33,6 +33,12 @@ export default function Navbar({
           {/* Desktop menu */}
           <div className="hidden md:flex items-center gap-6">
             <a
+              href="#aboutme"
+              className={`${themeClasses.textSecondary} hover:text-purple-400 transition-colors`}
+            >
+              {t.nav.aboutme}
+            </a>
+            <a
               href="#projects"
               className={`${themeClasses.textSecondary} hover:text-purple-400 transition-colors`}
             >

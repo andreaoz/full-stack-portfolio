@@ -14,6 +14,7 @@ import ProjectSection from '@/components/ProjectSection';
 import SkillSection from '@/components/SkillSection';
 import ContactSection from '@/components/ContactSection';
 import languages from '@/data/languages';
+import Aboutme from '@/components/AboutMe';
 
 const Portfolio = () => {
   const [activeProject, setActiveProject] = useState(null);
@@ -53,6 +54,13 @@ const Portfolio = () => {
         t={t} 
       />
 
+      {/* About Me Section 
+      <Aboutme 
+        themeClasses={themeClasses} 
+        t={t} 
+      />
+    */}
+    
       {/* Projects Section */}
       <ProjectSection
         projects={projects}

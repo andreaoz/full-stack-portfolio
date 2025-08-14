@@ -3,6 +3,7 @@ import projectData from './projectData.js';
 const es = {
   name: "Andrea Ojeda",
       nav: {
+        aboutme: "Sobre mi",
         projects: "Proyectos",
         skills: "Habilidades",
         contact: "Contacto"
@@ -13,6 +14,12 @@ const es = {
         viewProjects: "Ver Proyectos",
         contact: "Contactar"
       },
+      aboutme: {
+        title: "Sobre mi",
+        exp: "Blablabla.",
+        edu: "bñdjnbñsodbn",
+        extra: "sihvi"
+      },
       projects: {
         title: "Mis Proyectos",
         description: "Una colección de proyectos que demuestran mis habilidades en desarrollo full-stack. Algunos fueron realizados durante la Certificación Profesional de Full-Stack Development de IBM, otros corresponden a proyectos independientes, y varios fueron desarrollados en el marco de mis estudios universitarios.",
@@ -20,6 +27,7 @@ const es = {
         demo: "Demo",
         more: "Más",
         technologies: "Tecnologías Utilizadas",
+        status: "Status",
         links: "Enlaces del Proyecto",
         repository: "Repositorio GitHub",
         liveDemo: "Demo en Vivo",

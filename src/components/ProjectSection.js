@@ -1,6 +1,7 @@
 import ProjectCard from './ProjectCard';
 
 export default function ProjectSection({ projects, themeClasses, darkMode, setActiveProject, t }) {
+
   return (
     <section id="projects" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
@@ -12,7 +13,9 @@ export default function ProjectSection({ projects, themeClasses, darkMode, setAc
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map(project => (
+          {projects
+          .filter(project => project.title.trim() !== "")
+          .map(project => (
             <ProjectCard 
               key={project.id} 
               project={project} 

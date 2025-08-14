@@ -1,8 +1,8 @@
   const skills = {
-    frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Bootstrap"],
-    backend: ["Node.js",  "Express", "Python", "FastAPI", "Flask", "Django"],
+    frontend: ["React", "Vite", "Next.js", "Tailwind CSS", "Bootstrap"],
+    backend: ["Django", "Node.js", "Python", "FastAPI", "Flask" ],
     database: ["PostgreSQL", "MongoDB", "SQL"],
-    tools: ["Git", "Docker", "Kubernetes", "OpenShift", "Vercel", "Excel Avanzado"]
+    tools: ["Git", "Docker", "Render", "Vercel", "Excel Avanzado"]
   };
 
   export default skills;

@@ -39,7 +39,8 @@ const en = {
         title: "Thank you for visiting my portfolio.",
         description: "If you think my profile could be a good fit for your team, I would be happy to talk.",
         sendEmail: "Email",
-        viewCV: "View CV"
+        viewCV: "View CV",
+        CVLink:"https://drive.google.com/file/d/1CQVSmFNWvLfjB69tkHTdKbX2PyjoGMrf/view?usp=sharing"
       },
       footer: "Developed with Next and Tailwind CSS.",
   projectData

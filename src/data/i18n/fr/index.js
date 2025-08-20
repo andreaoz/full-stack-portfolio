@@ -45,7 +45,8 @@ const fr = {
     title: "Merci de visiter mon portfolio.",
     description: "Si vous pensez que mon profil peut correspondre à votre équipe, je serai ravie d’en discuter.",
     sendEmail: "Email",
-    viewCV: "Voir CV"
+    viewCV: "Voir CV",
+    CVLink: "https://drive.google.com/file/d/1LFWLGUzwTIp5-Wz9EAi9qTrLdu1ad3Yb/view?usp=sharing"
   },
   footer: "Développé avec Next et Tailwind CSS.",
   projectData
